@@ -5,18 +5,17 @@ export enum TimeUnit {
   MILLISECONDS,
 }
 
-interface ProcessingTimeCalculatorProps {
+interface ProcessingTimeCalculatorOptions {
   message?: string;
   timeUnit?: TimeUnit;
 }
-
-export default class ProcessingTimeCalculator {
+export class ProcessingTimeCalculator {
   // private readonly logger = new Logger(ProcessingTimeCalculator.name);
   private startCounter: [number, number];
   private message: string = "";
   private timeUnit: TimeUnit = TimeUnit.MILLISECONDS;
 
-  constructor(props?: ProcessingTimeCalculatorProps) {
+  constructor(props?: ProcessingTimeCalculatorOptions) {
     this.startCounter = hrtime();
     if (props) {
       if (props.message) {
