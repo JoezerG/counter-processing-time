@@ -1,6 +1,8 @@
 # Counter Processing Time
 
-Package with 0 dependencies to measure the execution time of a function.
+Package zero dependencies to measure the execution time of a function.
+
+## Usage
 
 ```typescript
 import { ProcessingTimeCalculator } from "@joezerg/counter-processing-time";
@@ -8,14 +10,14 @@ import { ProcessingTimeCalculator } from "@joezerg/counter-processing-time";
 function SomeFunction() {
   const timeCounter = new ProcessingTimeCalculator();
 
-  setTimeOut(() => {
-    const elapsedTime = timeCounter.stop(); // => return time in milliseconds
-    console.log(elapsedTime);
+  setTimeout(() => {
+    const elapsedTime = timeCounter.stop(); // => always return time in milliseconds or seconds
+    console.log(elapsedTime); // => 2000
   }, 2000);
 }
 ```
 
-## Configuration
+## Options
 
 ```typescript
 import {
@@ -29,8 +31,13 @@ function SomeFunction() {
     timeUnit: TimeUnit.SECONDS,
   });
 
-  setTimeOut(() => {
-    timeCounter.stop(); // Log Output => Some tag to identified the counter | 2 seconds
+  setTimeout(() => {
+    timeCounter.stop(); // Log Output => "Some tag to identified the counter | 2 seconds"
   }, 2000);
 }
 ```
+
+| Parameter | Type                     | Description                                                          |
+| --------- | ------------------------ | -------------------------------------------------------------------- |
+| message   | string (optional)        | message to attach to the log promt                                   |
+| timeUnit  | TimeUnit enum (optional) | Set the Time meassure unit to return or log, Defautl is milliseconds |
