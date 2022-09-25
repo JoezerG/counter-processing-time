@@ -1,0 +1,25 @@
+{
+  "name": "@joezerg/counter-processing-time",
+  "version": "1.0.0",
+  "description": "Starts a counter to measure the execution time of a function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoezerG/counter-processing-time.git"
+  },
+  "keywords": [],
+  "author": "JoezerG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoezerG/counter-processing-time/issues"
+  },
+  "homepage": "https://github.com/JoezerG/counter-processing-time#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.21",
+    "typescript": "^4.8.3"
+  }
+}
