@@ -43,14 +43,14 @@ export default class ProcessingTimeCalculator {
           console.log(`${this.message} | ${elapsedTimeSeconds} seconds`);
           break;
       }
-    } else {
-      switch (this.timeUnit) {
-        case TimeUnit.MILLISECONDS:
-          return elapsedTimeMili;
+    }
 
-        case TimeUnit.SECONDS:
-          return elapsedTimeSeconds;
-      }
+    switch (this.timeUnit) {
+      case TimeUnit.MILLISECONDS:
+        return elapsedTimeMili;
+
+      case TimeUnit.SECONDS:
+        return elapsedTimeSeconds;
     }
   }
 }
