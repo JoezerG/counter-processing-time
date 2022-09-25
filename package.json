@@ -1,6 +1,6 @@
 {
   "name": "@joezerg/counter-processing-time",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Starts a counter to measure the execution time of a function",
   "main": "dist/index.js",
   "scripts": {
