@@ -11,7 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/JoezerG/counter-processing-time.git"
   },
-  "keywords": [],
+  "keywords": [
+    "time",
+    "measure",
+    "timer",
+    "elapse",
+    "execution"
+  ],
   "author": "JoezerG",
   "license": "MIT",
   "bugs": {

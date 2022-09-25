@@ -2,6 +2,18 @@
 
 Package zero dependencies to measure the execution time of a function.
 
+## Install
+
+```bash
+yarn add @joezerg/counter-processing-time
+```
+
+or
+
+```bash
+npm i @joezerg/counter-processing-time
+```
+
 ## Usage
 
 ```typescript
