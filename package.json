@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "pre": "rm ./dist/* && tsc && npm version patch",
-    "build": "rm ./dist/* && npx tsc"
+    "pre": "rm -rf ./dist && tsc && npm version patch",
+    "build": "rm -rf ./dist && npx tsc"
   },
   "files": [
     "dist"
