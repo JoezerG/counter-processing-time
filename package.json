@@ -1,12 +1,12 @@
 {
   "name": "@joezerg/counter-processing-time",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Starts a counter to measure the execution time of a function",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "pre": "rm ./dist/* && tsc && npm version patch",
-    "build": "rm ./dist/* && npx tsc"
+    "pre": "rm -rf ./dist && tsc && npm version patch",
+    "build": "rm -rf ./dist && npx tsc"
   },
   "files": [
     "dist"
